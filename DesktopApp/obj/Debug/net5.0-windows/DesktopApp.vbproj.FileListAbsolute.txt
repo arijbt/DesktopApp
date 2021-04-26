@@ -24,3 +24,6 @@ C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\ref\De
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.pdb
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.genruntimeconfig.cache
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.vbprojAssemblyReference.cache
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process1.resources
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process2.resources
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process3.resources

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class MainMenu
+Partial Class Process1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,33 +22,33 @@ Partial Class MainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuPanel = New System.Windows.Forms.Panel()
+        Me.ProcessPanel = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'MenuPanel
+        'ProcessPanel
         '
-        Me.MenuPanel.BackColor = System.Drawing.Color.White
-        Me.MenuPanel.Location = New System.Drawing.Point(43, 29)
-        Me.MenuPanel.Name = "MenuPanel"
-        Me.MenuPanel.Size = New System.Drawing.Size(703, 464)
-        Me.MenuPanel.TabIndex = 0
+        Me.ProcessPanel.BackColor = System.Drawing.Color.White
+        Me.ProcessPanel.Location = New System.Drawing.Point(43, 29)
+        Me.ProcessPanel.Name = "ProcessPanel"
+        Me.ProcessPanel.Size = New System.Drawing.Size(703, 464)
+        Me.ProcessPanel.TabIndex = 0
         '
-        'MainMenu
+        'Process1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(800, 529)
-        Me.Controls.Add(Me.MenuPanel)
+        Me.Controls.Add(Me.ProcessPanel)
         Me.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "MainMenu"
-        Me.Text = "Main Menu"
+        Me.Name = "Process1"
+        Me.Text = "Process1"
         Me.ResumeLayout(False)
 
     End Sub
 
 
 
-    Friend WithEvents MenuPanel As Panel
+    Friend WithEvents ProcessPanel As Panel
 End Class

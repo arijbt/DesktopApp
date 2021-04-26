@@ -11,4 +11,8 @@
         MenuPanel.Left = (Me.Width - MenuPanel.Width) / 2
         MenuPanel.Top = (Me.Height - MenuPanel.Height) / 2
     End Sub
+
+    Private Sub MenuPanel_Paint(sender As Object, e As PaintEventArgs) Handles MenuPanel.Paint
+
+    End Sub
 End Class

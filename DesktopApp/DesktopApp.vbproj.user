@@ -7,5 +7,14 @@
     <Compile Update="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Process1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Process2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Process3.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
