@@ -27,3 +27,4 @@ C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\Deskto
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process1.resources
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process2.resources
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process3.resources
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Resources.resources

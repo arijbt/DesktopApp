@@ -12,7 +12,23 @@
         MenuPanel.Top = (Me.Height - MenuPanel.Height) / 2
     End Sub
 
-    Private Sub MenuPanel_Paint(sender As Object, e As PaintEventArgs) Handles MenuPanel.Paint
+    Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles Logoutbtn.Click
+        Me.Hide()
+        Authentication.Show()
+    End Sub
 
+    Private Sub Process1btn_Click(sender As Object, e As EventArgs) Handles Process1btn.Click
+        Me.Hide()
+        Process1.Show()
+    End Sub
+
+    Private Sub Process2btn_Click(sender As Object, e As EventArgs) Handles Process2btn.Click
+        Me.Hide()
+        Process2.Show()
+    End Sub
+
+    Private Sub Process3btn_Click(sender As Object, e As EventArgs) Handles Process3btn.Click
+        Me.Hide()
+        Process3.Show()
     End Sub
 End Class
