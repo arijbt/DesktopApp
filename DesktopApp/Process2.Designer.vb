@@ -22,27 +22,29 @@ Partial Class Process2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Process2))
         Me.ProcessPanel = New System.Windows.Forms.Panel()
+        Me.returnbtn = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.param4tb = New System.Windows.Forms.TextBox()
         Me.param3tb = New System.Windows.Forms.TextBox()
         Me.param2tb = New System.Windows.Forms.TextBox()
         Me.param1tb = New System.Windows.Forms.TextBox()
         Me.timetb = New System.Windows.Forms.TextBox()
-        Me.returnbtn = New System.Windows.Forms.Button()
         Me.Submitbtn = New System.Windows.Forms.Button()
         Me.DatePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.ProcessPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'ProcessPanel
         '
         Me.ProcessPanel.BackColor = System.Drawing.Color.White
+        Me.ProcessPanel.Controls.Add(Me.returnbtn)
         Me.ProcessPanel.Controls.Add(Me.Label6)
         Me.ProcessPanel.Controls.Add(Me.Label5)
         Me.ProcessPanel.Controls.Add(Me.Label4)
@@ -54,13 +56,80 @@ Partial Class Process2
         Me.ProcessPanel.Controls.Add(Me.param2tb)
         Me.ProcessPanel.Controls.Add(Me.param1tb)
         Me.ProcessPanel.Controls.Add(Me.timetb)
-        Me.ProcessPanel.Controls.Add(Me.returnbtn)
         Me.ProcessPanel.Controls.Add(Me.Submitbtn)
         Me.ProcessPanel.Controls.Add(Me.DatePicker)
         Me.ProcessPanel.Location = New System.Drawing.Point(43, 29)
         Me.ProcessPanel.Name = "ProcessPanel"
         Me.ProcessPanel.Size = New System.Drawing.Size(703, 464)
         Me.ProcessPanel.TabIndex = 0
+        '
+        'returnbtn
+        '
+        Me.returnbtn.BackColor = System.Drawing.Color.Transparent
+        Me.returnbtn.FlatAppearance.BorderSize = 0
+        Me.returnbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.returnbtn.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.returnbtn.ForeColor = System.Drawing.Color.White
+        Me.returnbtn.Image = CType(resources.GetObject("returnbtn.Image"), System.Drawing.Image)
+        Me.returnbtn.Location = New System.Drawing.Point(20, 20)
+        Me.returnbtn.Name = "returnbtn"
+        Me.returnbtn.Size = New System.Drawing.Size(56, 44)
+        Me.returnbtn.TabIndex = 28
+        Me.returnbtn.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(574, 156)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(60, 16)
+        Me.Label6.TabIndex = 27
+        Me.Label6.Text = "Param 4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(425, 156)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(60, 16)
+        Me.Label5.TabIndex = 26
+        Me.Label5.Text = "Param 3"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(253, 156)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(60, 16)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Param 2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(79, 156)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(60, 16)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "Param 1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(488, 77)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(37, 16)
+        Me.Label2.TabIndex = 23
+        Me.Label2.Text = "Time"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(83, 77)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(37, 16)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Date"
         '
         'param4tb
         '
@@ -97,15 +166,6 @@ Partial Class Process2
         Me.timetb.Size = New System.Drawing.Size(100, 23)
         Me.timetb.TabIndex = 12
         '
-        'returnbtn
-        '
-        Me.returnbtn.Location = New System.Drawing.Point(506, 350)
-        Me.returnbtn.Name = "returnbtn"
-        Me.returnbtn.Size = New System.Drawing.Size(134, 36)
-        Me.returnbtn.TabIndex = 11
-        Me.returnbtn.Text = "return"
-        Me.returnbtn.UseVisualStyleBackColor = True
-        '
         'Submitbtn
         '
         Me.Submitbtn.Location = New System.Drawing.Point(506, 402)
@@ -121,60 +181,6 @@ Partial Class Process2
         Me.DatePicker.Name = "DatePicker"
         Me.DatePicker.Size = New System.Drawing.Size(200, 23)
         Me.DatePicker.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(83, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(37, 16)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Date"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(488, 77)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 16)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "Time"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(79, 156)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 16)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Param 1"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(253, 156)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 16)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Param 2"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(425, 156)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 16)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Param 3"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(574, 156)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 16)
-        Me.Label6.TabIndex = 27
-        Me.Label6.Text = "Param 4"
         '
         'Process2
         '
@@ -197,7 +203,6 @@ Partial Class Process2
 
     Friend WithEvents ProcessPanel As Panel
     Friend WithEvents DatePicker As DateTimePicker
-    Friend WithEvents returnbtn As Button
     Friend WithEvents Submitbtn As Button
     Friend WithEvents param4tb As TextBox
     Friend WithEvents param3tb As TextBox
@@ -210,4 +215,5 @@ Partial Class Process2
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents returnbtn As Button
 End Class

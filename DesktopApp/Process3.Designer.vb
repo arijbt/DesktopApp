@@ -22,6 +22,7 @@ Partial Class Process3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Process3))
         Me.ProcessPanel = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -34,15 +35,16 @@ Partial Class Process3
         Me.param2tb = New System.Windows.Forms.TextBox()
         Me.param1tb = New System.Windows.Forms.TextBox()
         Me.timetb = New System.Windows.Forms.TextBox()
-        Me.returnbtn = New System.Windows.Forms.Button()
         Me.Submitbtn = New System.Windows.Forms.Button()
         Me.DatePicker = New System.Windows.Forms.DateTimePicker()
+        Me.returnbtn = New System.Windows.Forms.Button()
         Me.ProcessPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'ProcessPanel
         '
         Me.ProcessPanel.BackColor = System.Drawing.Color.White
+        Me.ProcessPanel.Controls.Add(Me.returnbtn)
         Me.ProcessPanel.Controls.Add(Me.Label6)
         Me.ProcessPanel.Controls.Add(Me.Label5)
         Me.ProcessPanel.Controls.Add(Me.Label4)
@@ -54,7 +56,6 @@ Partial Class Process3
         Me.ProcessPanel.Controls.Add(Me.param2tb)
         Me.ProcessPanel.Controls.Add(Me.param1tb)
         Me.ProcessPanel.Controls.Add(Me.timetb)
-        Me.ProcessPanel.Controls.Add(Me.returnbtn)
         Me.ProcessPanel.Controls.Add(Me.Submitbtn)
         Me.ProcessPanel.Controls.Add(Me.DatePicker)
         Me.ProcessPanel.Location = New System.Drawing.Point(43, 29)
@@ -151,15 +152,6 @@ Partial Class Process3
         Me.timetb.Size = New System.Drawing.Size(100, 23)
         Me.timetb.TabIndex = 12
         '
-        'returnbtn
-        '
-        Me.returnbtn.Location = New System.Drawing.Point(506, 350)
-        Me.returnbtn.Name = "returnbtn"
-        Me.returnbtn.Size = New System.Drawing.Size(134, 36)
-        Me.returnbtn.TabIndex = 11
-        Me.returnbtn.Text = "return"
-        Me.returnbtn.UseVisualStyleBackColor = True
-        '
         'Submitbtn
         '
         Me.Submitbtn.Location = New System.Drawing.Point(506, 402)
@@ -175,6 +167,20 @@ Partial Class Process3
         Me.DatePicker.Name = "DatePicker"
         Me.DatePicker.Size = New System.Drawing.Size(200, 23)
         Me.DatePicker.TabIndex = 0
+        '
+        'returnbtn
+        '
+        Me.returnbtn.BackColor = System.Drawing.Color.Transparent
+        Me.returnbtn.FlatAppearance.BorderSize = 0
+        Me.returnbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.returnbtn.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.returnbtn.ForeColor = System.Drawing.Color.White
+        Me.returnbtn.Image = CType(resources.GetObject("returnbtn.Image"), System.Drawing.Image)
+        Me.returnbtn.Location = New System.Drawing.Point(12, 12)
+        Me.returnbtn.Name = "returnbtn"
+        Me.returnbtn.Size = New System.Drawing.Size(56, 44)
+        Me.returnbtn.TabIndex = 34
+        Me.returnbtn.UseVisualStyleBackColor = False
         '
         'Process3
         '
@@ -197,7 +203,6 @@ Partial Class Process3
 
     Friend WithEvents ProcessPanel As Panel
     Friend WithEvents DatePicker As DateTimePicker
-    Friend WithEvents returnbtn As Button
     Friend WithEvents Submitbtn As Button
     Friend WithEvents param4tb As TextBox
     Friend WithEvents param3tb As TextBox
@@ -210,4 +215,5 @@ Partial Class Process3
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents returnbtn As Button
 End Class

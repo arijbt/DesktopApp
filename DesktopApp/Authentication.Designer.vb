@@ -23,7 +23,6 @@ Partial Class Authentication
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -38,7 +37,6 @@ Partial Class Authentication
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
@@ -52,28 +50,16 @@ Partial Class Authentication
         Me.Panel1.Size = New System.Drawing.Size(402, 430)
         Me.Panel1.TabIndex = 0
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Gray
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(67, 379)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(269, 25)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "CLOSE"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Gray
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(69, 340)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(269, 25)
+        Me.Button1.Size = New System.Drawing.Size(269, 30)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "LOGIN"
         Me.Button1.UseVisualStyleBackColor = False
@@ -99,7 +85,7 @@ Partial Class Authentication
         'txtPass
         '
         Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Location = New System.Drawing.Point(69, 274)
+        Me.txtPass.Location = New System.Drawing.Point(69, 280)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(266, 16)
         Me.txtPass.TabIndex = 4
@@ -108,16 +94,18 @@ Partial Class Authentication
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(154, 252)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label2.Location = New System.Drawing.Point(149, 252)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 16)
+        Me.Label2.Size = New System.Drawing.Size(106, 19)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "PASSWORD"
         '
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(69, 180)
+        Me.TextBox1.Location = New System.Drawing.Point(69, 186)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(266, 16)
         Me.TextBox1.TabIndex = 2
@@ -126,9 +114,11 @@ Partial Class Authentication
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(154, 158)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(149, 158)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 16)
+        Me.Label1.Size = New System.Drawing.Size(102, 19)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "USERNAME"
         '
@@ -137,6 +127,7 @@ Partial Class Authentication
         Me.Panel2.BackColor = System.Drawing.Color.Gray
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
+        Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Panel2.Size = New System.Drawing.Size(402, 106)
         Me.Panel2.TabIndex = 0
         '
@@ -168,5 +159,4 @@ Partial Class Authentication
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
 End Class

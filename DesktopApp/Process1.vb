@@ -17,21 +17,6 @@ Public Class Process1
         ProcessPanel.Top = (Me.Height - ProcessPanel.Height) / 2
     End Sub
 
-    Private Sub returnbtn_Click(sender As Object, e As EventArgs) Handles returnbtn.Click
-        MainMenu.Show()
-        Me.Hide()
-        DatePicker.Value = Now
-        timetb.Clear()
-        param1tb.Clear()
-        param2tb.Clear()
-        param3tb.Clear()
-        param4tb.Clear()
-        param5tb.Clear()
-        param6tb.Clear()
-        param7tb.Clear()
-        param8tb.Clear()
-
-    End Sub
     Private Sub checker()
         Dim TestInt As Integer
         Dim provider As CultureInfo = CultureInfo.InvariantCulture
@@ -195,5 +180,21 @@ Public Class Process1
 
     Private Sub DatePicker_GotFocus(sender As Object, e As EventArgs) Handles DatePicker.GotFocus
         DatePicker.CalendarForeColor = Color.Black
+    End Sub
+
+    Private Sub returnbtn_Click_1(sender As Object, e As EventArgs) Handles returnbtn.Click
+        MainMenu.Show()
+        Me.Hide()
+        DatePicker.Value = Now
+        timetb.Clear()
+        param1tb.Clear()
+        param2tb.Clear()
+        param3tb.Clear()
+        param4tb.Clear()
+        param5tb.Clear()
+        param6tb.Clear()
+        param7tb.Clear()
+        param8tb.Clear()
+
     End Sub
 End Class

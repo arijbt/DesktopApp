@@ -47,6 +47,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.12, )"
             }
           },
           "imports": [

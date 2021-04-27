@@ -17,7 +17,7 @@ Public Class Process3
         ProcessPanel.Top = (Me.Height - ProcessPanel.Height) / 2
     End Sub
 
-    Private Sub returnbtn_Click(sender As Object, e As EventArgs) Handles returnbtn.Click
+    Private Sub returnbtn_Click_1(sender As Object, e As EventArgs) Handles returnbtn.Click
         DatePicker.Value = Now
         timetb.Clear()
         param1tb.Clear()
