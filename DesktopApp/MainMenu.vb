@@ -13,22 +13,25 @@
     End Sub
 
     Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles Logoutbtn.Click
-        Me.Hide()
         Authentication.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Process1btn_Click(sender As Object, e As EventArgs) Handles Process1btn.Click
-        Me.Hide()
         Process1.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Process2btn_Click(sender As Object, e As EventArgs) Handles Process2btn.Click
-        Me.Hide()
         Process2.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Process3btn_Click(sender As Object, e As EventArgs) Handles Process3btn.Click
-        Me.Hide()
         Process3.Show()
+        Me.Hide()
     End Sub
 End Class

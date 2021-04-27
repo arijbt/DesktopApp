@@ -42,8 +42,9 @@ Public Class Authentication
             'to do
             txtPass.Clear()
             TextBox1.Clear()
-            Me.Hide()
             MainMenu.Show()
+            Me.Hide()
+
 
         End If
 

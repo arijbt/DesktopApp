@@ -1,6 +1,5 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Globalization
-Imports MainModule
 Public Class Process1
 
     Dim Tester As Boolean
@@ -19,8 +18,19 @@ Public Class Process1
     End Sub
 
     Private Sub returnbtn_Click(sender As Object, e As EventArgs) Handles returnbtn.Click
-        Me.Hide()
         MainMenu.Show()
+        Me.Hide()
+        DatePicker.Value = Now
+        timetb.Clear()
+        param1tb.Clear()
+        param2tb.Clear()
+        param3tb.Clear()
+        param4tb.Clear()
+        param5tb.Clear()
+        param6tb.Clear()
+        param7tb.Clear()
+        param8tb.Clear()
+
     End Sub
     Private Sub checker()
         Dim TestInt As Integer
@@ -61,7 +71,8 @@ Public Class Process1
         If Tester = False Then
             MsgBox("Submission Not valid, verify fields")
         Else
-            Dim command As New SqlCommand("insert into Process1(Date,Time, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8) values ('" & DatePicker.Value & "', '" & timetb.Text & "', '" & p1 & "', '" & p2 & "', '" & p3 & "', '" & p4 & "', '" & param5tb.Text & "', '" & param6tb.Text & "', '" & param7tb.Text & "', '" & param8tb.Text & "')", connection)
+            Dim userid As Integer = 1
+            Dim command As New SqlCommand("insert into Process1(userid, Date,Time, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8) values ('" & userid & "','" & DatePicker.Value & "', '" & timetb.Text & "', '" & p1 & "', '" & p2 & "', '" & p3 & "', '" & p4 & "', '" & param5tb.Text & "', '" & param6tb.Text & "', '" & param7tb.Text & "', '" & param8tb.Text & "')", connection)
 
             If connection.State = ConnectionState.Closed Then
                 connection.Open()
@@ -129,13 +140,6 @@ Public Class Process1
 
     End Sub
 
-    Private Sub timetb_GotFocus(sender As Object, e As EventArgs) Handles timetb.GotFocus
-        If timetb.Text = "" Then
-            timetb.Text = Now.Hour() & ":" & Now.Minute()
-        Else
-            timetb.ForeColor = Color.Black
-        End If
-    End Sub
 
     Private Sub timetb_LostFocus(sender As Object, e As EventArgs) Handles timetb.LostFocus
         MainModule.TimeValidation(timetb)
@@ -172,5 +176,24 @@ Public Class Process1
 
     Private Sub param8tb_LostFocus(sender As Object, e As EventArgs) Handles param8tb.LostFocus
         MainModule.StringOnly(param8tb)
+    End Sub
+
+    Private Sub timetb_GotFocus(sender As Object, e As EventArgs) Handles timetb.GotFocus
+        If timetb.Text = "" Then
+            timetb.Text = Now.Hour() & ":" & Now.Minute()
+        Else
+            timetb.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub DatePicker_LostFocus(sender As Object, e As EventArgs) Handles DatePicker.LostFocus
+        If DatePicker.Value.ToShortDateString() > Now.Date.ToShortDateString() Then
+            MessageBox.Show("Invalid date. The date will be set to today's date again!")
+            DatePicker.Value = Now
+        End If
+    End Sub
+
+    Private Sub DatePicker_GotFocus(sender As Object, e As EventArgs) Handles DatePicker.GotFocus
+        DatePicker.CalendarForeColor = Color.Black
     End Sub
 End Class
