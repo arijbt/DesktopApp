@@ -28,3 +28,8 @@ C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\Deskto
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process2.resources
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Process3.resources
 C:\Users\Erij\source\repos\DesktopApp\DesktopApp\obj\Debug\net5.0-windows\DesktopApp.Resources.resources
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\bin\Debug\net5.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\bin\Debug\net5.0-windows\System.Drawing.Common.dll
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Erij\source\repos\DesktopApp\DesktopApp\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

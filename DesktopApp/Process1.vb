@@ -15,6 +15,12 @@ Public Class Process1
         ProcessPanel.Width = x - (x / 9)
         ProcessPanel.Left = (Me.Width - ProcessPanel.Width) / 2
         ProcessPanel.Top = (Me.Height - ProcessPanel.Height) / 2
+        InnerPanel.Width = ProcessPanel.Width - (ProcessPanel.Width / 3)
+        InnerPanel.Height = ProcessPanel.Height - (ProcessPanel.Height / 3)
+        InnerPanel.Left = (ProcessPanel.Width - InnerPanel.Width) / 2
+        InnerPanel.Top = (ProcessPanel.Height - InnerPanel.Height) / 2
+        Submitbtn.Left = param4tb.Left
+
     End Sub
 
     Private Sub checker()
@@ -195,6 +201,38 @@ Public Class Process1
         param6tb.Clear()
         param7tb.Clear()
         param8tb.Clear()
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles param7tb.TextChanged
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles param8tb.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles param6tb.TextChanged
+
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles param5tb.TextChanged
 
     End Sub
 End Class

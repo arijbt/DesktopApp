@@ -15,6 +15,12 @@ Public Class Process3
         ProcessPanel.Width = x - (x / 9)
         ProcessPanel.Left = (Me.Width - ProcessPanel.Width) / 2
         ProcessPanel.Top = (Me.Height - ProcessPanel.Height) / 2
+        InnerPanel.Width = ProcessPanel.Width - (ProcessPanel.Width / 3)
+        InnerPanel.Height = ProcessPanel.Height - (ProcessPanel.Height / 3)
+        InnerPanel.Left = (ProcessPanel.Width - InnerPanel.Width) / 2
+        InnerPanel.Top = (ProcessPanel.Height - InnerPanel.Height) / 2
+        Submitbtn.Left = param4tb.Left
+
     End Sub
 
     Private Sub returnbtn_Click_1(sender As Object, e As EventArgs) Handles returnbtn.Click
